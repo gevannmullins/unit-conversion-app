@@ -39,7 +39,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:RhinoAfrica/unit-conversion-objects.git"
+      "url": "git@github.com:gevannmullins/unit-conversion-objects.git"
     }
   ],
   "scripts": {
