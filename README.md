@@ -176,3 +176,30 @@ assist to keep you moving.
   take your time, and put in the effort.
 - A lot of emphasis have been put on having to create unit tests for application and library functional tests. While we're more interested in your code than watching test cases run, in a real world scenario, such things are but a nice to have. We will not hate you if you didn't get around to it.
 - The amount of effort you put in would provide a great level of understanding of your abilities in using Laravel, and keeping it to the bare minimum may reduce your chances, however you should also keep it as simple as possible with extensive documentation that should prove a fluent understanding of the code you write. Follow the SOLID and KISS design principals where and when possible.
+
+
+### Installation and Presetup
+
+Please run the following command:
+
+Make sure that you have setup the environment properly. You will need minimum PHP 8.1, MySQL/MariaDB, composer and Node.js.
+
+1. Download the project (or clone using GIT)
+2. Copy `.env.example` into `.env` and configure your database credentials
+3. Go to the project's root directory using terminal window/command prompt
+4. Run `composer install`
+5. Set the application key by running `php artisan key:generate --ansi`
+6. Run migrations `php artisan migrate:fresh --seed`
+7. Run `npm install`
+8. Run `npm run build` to build assets
+9. Start local server by executing `php artisan serve`
+
+### Login Users
+
+1. Super Admin
+- username: gevann.mullins@gmail.com
+- password: superadmin
+
+2. Admin
+- username: gev.mul@gmail.com
+- password: admin
