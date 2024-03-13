@@ -9,4 +9,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function unit_conversion()
+    {
+        return view('unit_conversion');
+    }
 }

@@ -6,7 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UnitConversionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +41,9 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+
+Route::get('/unit-conversion', [UnitConversionController::class, 'index'])->name('unit.conversion');
+Route::post('/unit-conversion', [UnitConversionController::class, 'convert'])->name('unit.convert');
 
 Route::resources([
     'roles' => RoleController::class,
